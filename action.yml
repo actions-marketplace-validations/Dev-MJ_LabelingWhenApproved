@@ -1,0 +1,19 @@
+name: 'LabelingWhenApproved'
+ description: 'PR가 일정 수 만큼 approve가 되면, APPROVE label을 붙인다.'
+ inputs:
+   github-token:  # id of input
+     description: 'github token'
+     required: true
+   approves-number:
+     description: 'Approve 수'
+     required: true
+   label-name:
+     description: '명시할 label 이름'
+     required: false
+     default: 'APPROVE'
+ # outputs:
+ #   time: # id of output
+ #     description: 'The time we greeted you'
+ runs:
+   using: 'node16'
+   main: 'index.js'
