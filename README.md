@@ -1,7 +1,7 @@
 # LabelingWhenApproved
 
 
-```
+```YAML
 name: Labeling when approved PR
 
 on:
